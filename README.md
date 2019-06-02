@@ -1,42 +1,42 @@
 # esx_addonaccount
 
-## Download & Installation
+## Download e Instalação
 
-### Using [fvm](https://github.com/qlaffont/fvm-installer)
+### Usando [fvm](https://github.com/qlaffont/fvm-installer)
 ```
 fvm install --save --folder=esx esx-org/esx_addonaccount
 ```
 
-### Using Git
+### Usando o Git
 ```
 cd resources
 git clone https://github.com/ESX-Org/esx_addonaccount [esx]/esx_addonaccount
 ```
 
-### Manually
+### Manualmente
 - Download https://github.com/ESX-Org/esx_addonaccount/archive/master.zip
-- Put it in the `[esx]` directory
+- Coloque-o no diretório `[esx]`
 
-## Installation
-- Import `esx_addonaccount.sql` in your database
-- Add this in your `server.cfg`:
+## Instalação
+- Importar `esx_addonaccount.sql` em seu banco de dados
+- Adicione isto em seu `server.cfg`:
 
 ```
 start esx_addonaccount
 ```
 
-## Usage
-There is two types of accounts: shared and not shared.
+## Uso
+Existem dois tipos de contas: compartilhadas e não compartilhadas.
 
-- Shared accounts doesn't belong to a specific user. Example: society accounts.
-- None-shared accounts are created for every user in the server. They are created in db when player is loaded, Example: property black money
+- Contas compartilhadas não pertencem a um usuário específico. Exemplo: contas da sociedade.
+- Nenhuma conta compartilhada é criada para todos os usuários no servidor. Eles são criados em db quando o player é carregado, Exemplo: property black money
 
-### `addon_account` database information
-An addon account must be configured in the database before using it. Don't forget to run a server restart afterwards (you can alternative restart the script and relog all clients)
+### `addon_account` informação do banco de dados
+Uma conta addon deve ser configurada no banco de dados antes de usá-lo. Não esqueça de executar uma reinicialização do servidor depois (você pode alternativamente reiniciar o script e relogar todos os clientes)
 
-| `name`   | `label` | `shared` |
+| `nome`   | `rótulo` | `compartilhado` |
 | -------- | ------- | -------- |
-| name of the account | label of the account (not used) | is the account shared with others? (boolean either `0` or `1`) |
+| nome da conta | rótulo da conta (não usado) | a conta é compartilhada com outras pessoas? (booleano ou `0` ou` 1`) |
 
 ```lua
 TriggerEvent('esx_addonaccount:getSharedAccount', 'society_realestateagent', function(account)
@@ -52,7 +52,7 @@ end)
 ### License
 esx_addonaccount - addon account for ESX
 
-Copyright (C) 2015-2018 Jérémie N'gadi
+Copyright (C) 2015-2019 Jérémie N'gadi
 
 This program Is free software: you can redistribute it And/Or modify it under the terms Of the GNU General Public License As published by the Free Software Foundation, either version 3 Of the License, Or (at your option) any later version.
 
