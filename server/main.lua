@@ -1,3 +1,5 @@
+--ESX-Brasil
+
 local AccountsIndex, Accounts, SharedAccounts = {}, {}, {}
 ESX = nil
 
