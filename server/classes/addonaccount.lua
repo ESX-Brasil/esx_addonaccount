@@ -1,5 +1,3 @@
---ESX-Brasil
-
 function CreateAddonAccount(name, owner, money)
 	local self = {}
 

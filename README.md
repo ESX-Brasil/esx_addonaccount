@@ -48,6 +48,10 @@ TriggerEvent('esx_addonaccount:getAccount', 'property_black_money', 'steam:01234
 end)
 ```
 
+# Discord
+
+[![Join ESX Brasil](https://discordapp.com/api/guilds/693468263161659402/embed.png?style=banner2)](https://discord.gg/ZGXTsdN)
+
 # Legal
 ### License
 esx_addonaccount - addon account for ESX
