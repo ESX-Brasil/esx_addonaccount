@@ -4,7 +4,7 @@ game 'gta5'
 
 description 'ESX Addon Account'
 
-version '1.0.1'
+version '1.0.2'
 
 server_scripts {
 	'@mysql-async/lib/MySQL.lua',
